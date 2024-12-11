@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">HypeLane</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="product-page">
+        <section class="product-view">
+            <div class="product-gallery">
+                <!-- Slider με βελάκια -->
+                <div class="slider">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <img id="slider-image" src="images/image00017.jpeg" alt="Product Image">
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <!-- Μικρογραφίες -->
+                <div class="gallery-thumbnails">
+                    <img onclick="changeImage(0)" src="images/image00017.jpeg" alt="Thumbnail 1">
+                    <img onclick="changeImage(1)" src="images/image00014.jpeg" alt="Thumbnail 2">
+                    <img onclick="changeImage(2)" src="images/image00016.jpeg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>CEMENT JUNGLE FLEECE “OG” C/W</h1>
+                <h2>Price: €50</h2>
+                <h3>Available Sizes</h3>
+                <div class="size-options">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <h3>Available Colors</h3>
+                <div class="color-options">
+                    <div class="color black"></div>
+                    <div class="color gray"></div>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HypeLane. All Rights Reserved.</p>
+    </footer>
+    <script src="indigosfleece.js"></script>
+</body>
+
+</html>

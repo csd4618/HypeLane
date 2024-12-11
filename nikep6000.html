@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">HypeLane</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="product-page">
+        <section class="product-view">
+            <div class="product-gallery">
+                <!-- Slider με βελάκια -->
+                <div class="slider">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <img id="slider-image" src="images/nike-p-6000.jpg" alt="Product Image">
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <!-- Μικρογραφίες -->
+                <div class="gallery-thumbnails">
+                    <img onclick="changeImage(0)" src="images/nike-p-6000.jpg" alt="Thumbnail 1">
+                    <img onclick="changeImage(1)" src="images/nike-p-6000 (2).jpg" alt="Thumbnail 2">
+                    <img onclick="changeImage(2)" src="images/nike-p-6000 (1).jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Nike P-6000</h1>
+                <p>Refreshed and ready to make you King of the Streets, Nike's P-6000 in a gray colorway with silver
+                    details are an absolute must-have! Made from a breathable fabric upper for a super comfortable fit,
+                    with synthetic overlays for extra durability, they feature a soft ankle collar for everyday support
+                </p>
+                <h2>Price: €80</h2>
+                <h3>Available Sizes</h3>
+                <div class="size-options">
+                    <span>40</span>
+                    <span>41</span>
+                    <span>42</span>
+                    <span>43</span>
+                    <span>44</span>
+                    <span>45</span>
+                    <span>46</span>
+                </div>
+                <h3>Available Colors</h3>
+                <div class="color-options">
+                    <div class="color gray"></div>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HypeLane. All Rights Reserved.</p>
+    </footer>
+    <script src="nikep6000.js"></script>
+</body>
+
+</html>

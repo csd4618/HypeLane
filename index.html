@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HypeLane</h1>
+        <nav>
+            <ul>
+                <li><a href="#shoes">Shoes</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="shoes">
+            <h2>Shoes</h2>
+            <div class="product">
+                <a href="corteiz.html">
+                    <img src="images/corteiz 1.jpeg" alt="Air Max 95 SP Corteiz">
+                </a>
+                <h3>Air Max 95 SP Corteiz</h3>
+                <p>Sizes: 39, 40, 41, 42, 43</p>
+                <p>Price: €260</p>
+            </div>
+            <div class="product">
+                <a href="nike_travis.html">
+                    <img src="images/nike-dunk-low-sb-x-travis-scott-1717-nbukh (1).jpg"
+                        alt="Nike Dunk Low SB x Travis Scott">
+                </a>
+                <h3>Nike Dunk Low SB x Travis Scott</h3>
+                <p>Sizes: 38, 39, 40, 41</p>
+                <p>Price: €185</p>
+            </div>
+            <div class="product">
+                <a href="nikep6000.html">
+                    <img src="images/nike-p-6000.jpg" alt="Nike P-6000">
+                </a>
+                <h3>Nike P-6000</h3>
+                <p>Sizes: 40, 41, 42</p>
+                <p>Price: €80</p>
+            </div>
+            <div class="product">
+                <a href="nocta.html">
+                    <img src="images/img01.jpg" alt="Nike Glide x NOCTA 'White Chrome'">
+                </a>
+                <h3>Nike Glide x NOCTA 'White Chrome'</h3>
+                <p>Sizes: 39, 40, 41, 42</p>
+                <p>Price: €365</p>
+            </div>
+        </section>
+
+        <section id="clothing">
+            <h2>Clothing</h2>
+            <div class="product">
+                <a href="indigostriple.html">
+                    <img src="images/image00006.jpeg" alt="T-Shirt 1">
+                </a>
+                <h3>"WHAT THE WORLD NEEDS”</h3>
+                <p>Sizes: S, M, L, XL</p>
+                <p>Price: €40</p>
+            </div>
+            <div class="product">
+                <a href="indigoswhiteblue.html">
+                    <img src="images/image00008.jpeg" alt="T-Shirt 3">
+                </a>
+                <h3>“THE BLUEPRINT”</h3>
+                <p>Sizes: S, M, L, XL</p>
+                <p>Price: €40</p>
+            </div>
+            <div class="product">
+                <a href="indigosfleece.html">
+                    <img src="images/image00017.jpeg" alt="T-Shirt 4">
+                </a>
+                <h3>CEMENT JUNGLE FLEECE</h3>
+                <p>Sizes: S, M, L, XL</p>
+                <p>Price: €50</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <!-- Sponsor Modal -->
+    <div id="sponsor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video autoplay muted loop class="sponsor-video">
+                <source src="videos/0001-0250.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>We are proudly sponsored by <strong>Indigos</strong>.</p>
+        </div>
+    </div>
+
+    <div id="sticky-sponsor" class="sticky-sponsor">
+        <img src="images//vologo final.png" alt="Sponsor Logo" class="sponsor-logo">
+        <p><strong>Made in the FUCKING basement</strong></p>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 HypeLane. All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
